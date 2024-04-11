@@ -1,12 +1,99 @@
-﻿<Window x:Class="Prog_122_L3_Notes.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Prog_122_L3_Notes"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+﻿<Window
+    x:Class="Prog_122_L3_Notes.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:Prog_122_L3_Notes"
+    mc:Ignorable="d"
+    Title="MainWindow"
+    Height="450"
+    Width="800">
+    <Canvas
+        Background="#FFC9BBBB">
+        <TextBox
+            x:Name="txtFirstName"
+            Canvas.Left="57"
+            TextWrapping="Wrap"
+            Canvas.Top="119"
+            Width="120" />
+        <Button
+            x:Name="btnDisplayInformation"
+            Content="Display Information"
+            Canvas.Left="59"
+            Canvas.Top="383"
+            Click="btnDisplayInformation_Click"
+            Background="#FFA4B8EA" />
+        <Label
+            Content="First Name"
+            Canvas.Left="59"
+            Canvas.Top="88" />
+        <TextBox
+            x:Name="txtLastName"
+            Canvas.Left="59"
+            TextWrapping="Wrap"
+            Canvas.Top="173"
+            Width="120"
+            RenderTransformOrigin="0.124,0.389"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Top" />
+        <Label
+            Content="Last Name"
+            Canvas.Left="57"
+            Canvas.Top="142"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            RenderTransformOrigin="0.479,-0.163" />
+        <!--Display the user full name after button is clicked-->
+        <!--1. Add a label-->
+        <!--2. Give our lable a name-->
+        <!--3. In out >CS we are going to "wireup" our front end to our back end code-->
+        <Label
+            x:Name="lblDisplayFullName"
+            Content="Label"
+            Canvas.Left="381"
+            Canvas.Top="25" />
+        <RichTextBox
+            Height="326"
+            Width="381"
+            HorizontalAlignment="Center"
+            Canvas.Left="381"
+            VerticalAlignment="Top"
+            Canvas.Top="77">
+            <FlowDocument>
+                <!--page of paper-->
+                <Paragraph>
+                    <!--paragraph of text-->
+                    <!--we are going to name the run-->
+                    <Run
+                        x:Name="runDisplay"
+                        Text="RichTextBox" />
+                    <!--single sentence-->
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <RichTextBox
+            Height="129"
+            Width="295"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Canvas.Top="240"
+            RenderTransformOrigin="0.495,0.494"
+            Canvas.Left="57">
+            <FlowDocument>
+                <Paragraph>
+                    <Run
+                        x:Name="runHomeInfo"
+                        Text="RichTextBox" />
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Label
+            Content="Address"
+            Canvas.Left="59"
+            Canvas.Top="209" />
 
-    </Grid>
+
+
+    </Canvas>
 </Window>
