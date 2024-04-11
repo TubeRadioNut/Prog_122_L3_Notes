@@ -1,6 +1,6 @@
 ﻿//Charles Milender
 //4-10-2024
-//CSI 122
+//CSI 122 Lecture3 Notes
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
