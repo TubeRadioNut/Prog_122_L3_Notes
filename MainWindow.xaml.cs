@@ -57,14 +57,14 @@ namespace Prog_122_L3_Notes
 
                 //x- Add a label for the Rich Text box
 
-                // -Properly name the "Run" tag
+                //x- Properly name the "Run" tag
 
-                // Write the code to grab the text from RTB
+                //x- Write the code to grab the text from RTB
                 string address = runHomeInfo.Text;
 
-                // Display it to our original runDisplay
+                //x- Display it to our original runDisplay
                 runDisplay.Text += "\n\n";
-                //append the address
+                //append the rich text box with address
                 runDisplay.Text += address;
 
             }
